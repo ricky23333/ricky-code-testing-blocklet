@@ -79,13 +79,13 @@ function Home() {
                 </button>{' '}
               </div>
             ) : (
-              <button type="button" className="button-style-none h-10" onClick={handleOpenEditModel}>
+              <div className="button-style-none h-8 " onClick={handleOpenEditModel}>
                 <img
                   className="transition-all duration-150 ease-in-out w-8 h-8 cursor-pointer hover:scale-105"
                   src={EditIcon}
                   alt="editIcon"
                 />
-              </button>
+              </div>
             )}
           </div>
 
