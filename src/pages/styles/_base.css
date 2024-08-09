@@ -1,0 +1,37 @@
+.custom-button {
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 0 !important;
+  outline: none !important;
+}
+
+@media only screen and (max-width: 400px) {
+  .custom-button {
+    padding: 0.3rem 0.3rem !important;
+  }
+}
+
+.button-primary {
+  background-color: #0a66c2;
+  color: rgba(255, 255, 255, 1);
+}
+
+.button-primary:hover {
+  background-color: #0353a4;
+}
+
+.button-cancel {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button-cancel:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+}
+
+.button-style-none {
+  outline: none !important;
+  border: none !important;
+  background-color: rgba(0, 0, 0, 0);
+}

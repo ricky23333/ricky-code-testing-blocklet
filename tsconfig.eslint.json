@@ -3,7 +3,17 @@
   "compilerOptions": {
     "noEmit": true
   },
-  "include": [
-    ".eslintrc.js"
+  "include": [".eslintrc.js"],
+  "trailing-comma": [
+    true,
+    {
+      "singleline": "never",
+      "multiline": {
+        "objects": "never",
+        "arrays": "always",
+        "functions": "never",
+        "typeLiterals": "ignore"
+      }
+    }
   ]
 }

@@ -9,7 +9,7 @@ did: z2qa2om6fAdP6zuWqqz5zALMokGjMzK2hyndC
 main: api/dist/index.js
 author:
   name: rickyluo
-  email: hualazimo@live.cn
+  email: rickyluo0923@gmail.com
 repository:
   type: git
   url: git+https://github.com/blocklet/create-blocklet.git

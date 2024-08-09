@@ -5,13 +5,13 @@
   "scripts": {
     "dev": "blocklet dev",
     "lint": "tsc --noEmit && eslint src api/src --ext .mjs,.js,.jsx,.ts,.tsx",
-    "lint:fix": "npm run lint -- --fix",
+    "lint:fix": "npm run lint --fix",
     "start": "cross-env NODE_ENV=development nodemon api/dev.ts -w api",
     "clean": "node scripts/build-clean.mjs",
     "bundle": "tsc --noEmit && npm run bundle:client && npm run bundle:api",
     "bundle:client": "vite build",
     "bundle:api": "npm run clean && tsc -p tsconfig.api.json && blocklet bundle --compact --create-release",
-    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle",
+    "deploy": "npm run bundle && blocklet deploy .blocklet/bundle --app-id did:abt:zNKuKWRukJ5fKLrsmQZ3fQShDZpewT4vfebS",
     "upload": "npm run bundle && blocklet upload .blocklet/release/blocklet.json",
     "prepare": "npx simple-git-hooks",
     "bump-version": "zx --quiet scripts/bump-version.mjs"
@@ -44,12 +44,19 @@
     "@ocap/client": "^1.18.128",
     "@ocap/mcrypto": "^1.18.128",
     "@ocap/wallet": "^1.18.128",
+    "autoprefixer": "^10.4.20",
     "axios": "^1.7.2",
+    "classnames": "^2.5.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "dotenv-flow": "^4.1.0",
     "express": "^4.19.2",
-    "express-async-errors": "^3.1.1"
+    "express-async-errors": "^3.1.1",
+    "express-validator": "^7.1.0",
+    "postcss": "^8.4.41",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "tailwindcss": "^3.4.8"
   },
   "devDependencies": {
     "@arcblock/eslint-config": "^0.3.2",
